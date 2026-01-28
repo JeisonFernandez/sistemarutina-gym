@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutina Casa – Fase 1 (Actualizada)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+  <script src="https://cdn.plyr.io/3.8.4/plyr.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🔥 Rutina Casa – Fase 1 (6 Semanas) - Actualizada 🔥</h1>
+
+    <div class="week-track">
+      <span style="font-weight:bold; color:#50e3c2;">Semana:</span>
+      <span id="week-count">1</span>
+      <br /><br />
+      <span style="color:#ff9f43; font-weight:bold;">Progreso días:</span>
+      <div id="days-container" style="margin-top:8px; display:flex; gap:8px;">
+      </div>
+      <small style="opacity:.8;">Marca cada día que completes ✅</small>
+    </div>
+
+    <!-- Lunes (Moderado) -->
+    <div class="day">
+      <div class="day-title">Lunes – Full Body Moderado</div>
+      <div class="exercise"><span>Flexiones con rodilla:</span> 3×10-12</div>
+      <div class="exercise"><span>Remo mancuerna:</span> 3×10-12 c/brazo</div>
+      <div class="exercise"><span>Sentadilla goblet:</span> 3×12</div>
+      <div class="exercise"><span>Hip thrust:</span> 2×15-20</div>
+      <div class="exercise"><span>Elevación de hombros:</span> 2×12-15</div>
+      <div class="exercise"><span>Curl bíceps:</span> 2×10-12</div>
+      <div class="exercise"><span>Extensión tríceps:</span> 2×12</div>
+      <div class="exercise"><span>Plancha:</span> 2×30s</div>
+      <div class="note">Moderado, sin llegar al fallo. Descanso: 75-90s entre series.</div>
+    </div>
+
+    <!-- Martes -->
+    <div class="day">
+      <div class="day-title">Martes – Piernas + Core</div>
+      <div class="exercise"><span>Sentadilla controlada:</span> 4×15</div>
+      <div class="exercise"><span>Zancadas:</span> 3×10 c/pierna</div>
+      <div class="exercise"><span>Hip thrust:</span> 4×15-20</div>
+      <div class="exercise"><span>Wall sit:</span> 2×30-45s</div>
+      <div class="exercise"><span>Hollow hold:</span> 3×20-30s</div>
+      <div class="exercise"><span>Dead bug:</span> 3×10/10</div>
+    </div>
+
+    <!-- Miércoles -->
+    <div class="day">
+      <div class="day-title">Miércoles – Movilidad + Caminata</div>
+      <div class="exercise"><span>Caminata:</span> 20-40 min</div>
+      <div class="exercise"><span>Estiramientos:</span> 10-15 min</div>
+      <div class="exercise"><span>Plancha:</span></div>
+    </div>
+
+    <!-- Jueves (UNI) -->
+    <div class="day">
+      <div class="day-title">Jueves (UNI) – Movilidad + Core</div>
+      <div class="exercise"><span>Caminata ligera:</span> 20-30 min</div>
+      <div class="exercise"><span>Estiramientos:</span></div>
+      <div class="exercise"><span>Hollow hold:</span> 2×20-30s</div>
+      <div class="exercise"><span>Plancha:</span> 2×30s</div>
+    </div>
+
+    <!-- Viernes -->
+    <div class="day">
+      <div class="day-title">Viernes – Upper + Brazos (Fuerte)</div>
+      <div class="exercise"><span>Flexiones con rodilla:</span> 3×10-12</div>
+      <div class="exercise"><span>Elevación hombros:</span> 3×8-12</div>
+      <div class="exercise"><span>Remo mancuerna:</span> 3×12 c/brazo</div>
+      <div class="exercise"><span>Curl bíceps:</span> 3×12-15</div>
+      <div class="exercise"><span>Extensión tríceps:</span> 3×12-15</div>
+      <div class="note">Descanso 90-120s. Si pike push up es muy duro, reemplaza por press con mochila o elevación
+        hombros con carga.</div>
+    </div>
+
+    <!-- Sábado (UNI) -->
+    <div class="day">
+      <div class="day-title">Sábado (UNI) – Caminata + Core suave</div>
+      <div class="exercise"><span>Caminata:</span> 20-40 min</div>
+      <div class="exercise"><span>Estiramientos:</span></div>
+      <div class="exercise"><span>Abs suave:</span> 5-8 min</div>
+    </div>
+
+    <!-- Domingo (Fuerte) -->
+    <div class="day">
+      <div class="day-title">Domingo – Full Body FUERTE (Tu día principal)</div>
+      <div class="exercise"><span>Flexiones con rodilla:</span> 4×12-15</div>
+      <div class="exercise"><span>Remo mancuerna:</span> 4×12-15 c/brazo</div>
+      <div class="exercise"><span>Sentadilla goblet:</span> 4×10-15</div>
+      <div class="exercise"><span>Puente de glúteo:</span> 3×15-20</div>
+      <div class="exercise"><span>Curl bíceps:</span> 3×10-15</div>
+      <div class="exercise"><span>Extensión tríceps:</span> 3×12-15</div>
+      <div class="exercise"><span>Plancha:</span> 2×30-45s</div>
+      <div class="note">Domingo es tu día fuerte porque te sientes más activo. Intenta añadir 1 serie extra en el
+        ejercicio que sientas mejor. Descanso 90-120s.</div>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="exerciseModal">
+    <div class="modal-box">
+      <h2 id="modalTitle"></h2>
+      <div id="modalContent"></div>
+      <button class="close-btn" onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

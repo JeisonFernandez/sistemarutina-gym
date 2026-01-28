@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(135deg, #0e0e17, #1a1a32);
+  color: #fff;
+  font-family:
+    Segoe UI,
+    sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #50e3c2;
+  margin-bottom: 20px;
+}
+
+.day {
+  background: rgba(255, 255, 255, 0.08);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #50e3c2;
+}
+
+.day-title {
+  font-size: 1.4em;
+  color: #50e3c2;
+  margin-bottom: 10px;
+}
+
+.exercise {
+  margin: 8px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.exercise:hover {
+  background: rgba(80, 227, 194, 0.15);
+}
+
+.exercise span {
+  font-weight: bold;
+}
+
+/* Modal */
+#exerciseModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #1a1a32;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-box h2 {
+  color: #50e3c2;
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  margin-top: 15px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #50e3c2;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.day-box {
+  transition:
+    background-color 0.3s ease,
+    transform 0.1s active;
+}
+.day-box:active {
+  transform: scale(0.9);
+}
