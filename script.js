@@ -3,7 +3,7 @@ let currentPlayer = null;
 
 // "API" local de ejercicios
 const exerciseAPI = {
-  "Flexiones con rodilla": {
+  Flexiones: {
     desc: "Flexión adaptada. Baja lento (3–4s), sube apoyando rodillas. Mantén core y glúteos firmes. Progresión hacia flexión completa.",
     video: "",
   },
