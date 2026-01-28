@@ -40,7 +40,8 @@ const exerciseAPI = {
 
   "Curl bíceps": {
     desc: "Bíceps. Sin impulso, sube controlado y baja en 3 segundos.",
-    video: "/videos/biceps-1.mp4",
+    video:
+      "https://github.com/JeisonFernandez/sistemarutina-gym/raw/refs/heads/main/videos/biceps-1.mp4",
   },
 
   "Extensión tríceps": {
